@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multimodal Threat Intelligence AI</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>Multimodal Threat Intel AI</h1>
+            <p style="color: var(--text-muted);">Autonomous Phishing & Malware Detection System</p>
+        </header>
+
+        <div class="dashboard-grid">
+            <!-- Input Section -->
+            <div class="card">
+                <h2>Analyze Threat</h2>
+                <form id="analyzeForm">
+                    <div class="input-group">
+                        <label>Email Body / Text Content</label>
+                        <textarea id="emailText" rows="6" placeholder="Paste suspicious email text here..."></textarea>
+                    </div>
+
+                    <div class="input-group">
+                        <label>Upload Screenshot (Optional)</label>
+                        <input type="file" id="screenshotFile" accept="image/*">
+                    </div>
+
+                    <div class="input-group" style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
+                        <div>
+                            <label>SPF Status</label>
+                            <select id="spfStatus">
+                                <option value="pass">Pass</option>
+                                <option value="fail">Fail</option>
+                                <option value="softfail">SoftFail</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label>DKIM Status</label>
+                            <select id="dkimStatus">
+                                <option value="pass">Pass</option>
+                                <option value="fail">Fail</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <button type="submit">Run Multimodal Analysis</button>
+                </form>
+            </div>
+
+            <!-- Results Section -->
+            <div class="card" id="resultsCard">
+                <h2>Threat Intelligence Report</h2>
+                <div id="loading" class="loading hidden">
+                    <p class="animate-pulse">Analyzing Neural Pathways...</p>
+                </div>
+
+                <div id="resultsContent" class="hidden">
+                    <div class="score-display">
+                        <div class="big-score" id="finalScore">0</div>
+                        <div class="threat-level" id="threatLevel">WAITING</div>
+                    </div>
+
+                    <div style="margin-top: 2rem;">
+                        <h3>Fusion Breakdown</h3>
+                        <ul class="details-list">
+                            <li>
+                                <span>Vision Confidence</span>
+                                <span id="visionScore" style="color: var(--accent);">0%</span>
+                            </li>
+                            <li>
+                                <span>NLP Maliciousness</span>
+                                <span id="nlpScore" style="color: var(--primary);">0%</span>
+                            </li>
+                            <li>
+                                <span>Forensic Risk</span>
+                                <span id="forensicScore" style="color: var(--danger);">0%</span>
+                            </li>
+                            <li>
+                                <span>Enrichment Risk</span>
+                                <span id="enrichmentScore" style="color: #eab308;">0%</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div style="margin-top: 2rem;">
+                        <h3>Domain Intelligence</h3>
+                        <ul class="details-list">
+                            <li>
+                                <span>Domain Age</span>
+                                <span id="domainAge">-</span>
+                            </li>
+                            <li>
+                                <span>Registrar</span>
+                                <span id="domainRegistrar">-</span>
+                            </li>
+                            <li>
+                                <span>Reputation Score</span>
+                                <span id="domainReputation">-</span>
+                            </li>
+                            <li>
+                                <span>MITRE Tactics</span>
+                                <span id="mitreTactics">-</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div style="margin-top: 1rem; padding: 1rem; background: rgba(0,0,0,0.2); border-radius: 0.5rem;">
+                        <strong>AI Recommendation:</strong>
+                        <p id="recommendation" style="margin: 0.5rem 0 0 0; color: var(--text-muted);">Submit data to
+                            generate report.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>
