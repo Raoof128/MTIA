@@ -16,10 +16,10 @@ The system uses a **Multimodal Fusion Engine** to combine signals from four dist
 ```mermaid
 graph TD
     User[User Input] --> API[FastAPI Backend]
-    API --> Vision[Vision Pipeline<br/>(CNN/ViT)]
-    API --> NLP[NLP Pipeline<br/>(Distilled BERT)]
-    API --> Forensics[Forensics Engine<br/>(EXIF/Headers)]
-    API --> Enrichment[Enrichment Engine<br/>(WHOIS/Reputation)]
+    API --> Vision["Vision Pipeline<br/>(CNN/ViT)"]
+    API --> NLP["NLP Pipeline<br/>(Distilled BERT)"]
+    API --> Forensics["Forensics Engine<br/>(EXIF/Headers)"]
+    API --> Enrichment["Enrichment Engine<br/>(WHOIS/Reputation)"]
     
     Vision -->|Vision Score| Fusion[Fusion Engine]
     NLP -->|Maliciousness Score| Fusion
