@@ -11,7 +11,7 @@ By participating in this project, you agree to abide by our [Code of Conduct](CO
 1.  **Fork the Repository**: Click the "Fork" button on the top right of the repository page.
 2.  **Clone the Repository**: Clone your forked repository to your local machine.
     ```bash
-    git clone https://github.com/YOUR_USERNAME/Multimodal_Threat_Intel.git
+    git clone https://github.com/Raoof128/MTIA.git
     ```
 3.  **Create a Branch**: Create a new branch for your feature or bug fix.
     ```bash
@@ -38,6 +38,7 @@ By participating in this project, you agree to abide by our [Code of Conduct](CO
 *   **JavaScript**: Use modern ES6+ syntax.
 *   **Documentation**: Update README.md and add docstrings for new code.
 *   **Testing**: Add unit tests for new features using `pytest`.
+*   **Linting**: Ensure code passes `make lint` (flake8, mypy) and `make format` (black, isort).
 
 ## Reporting Issues
 

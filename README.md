@@ -1,6 +1,6 @@
 # Multimodal Threat Intelligence AI
 
-[![CI](https://github.com/yourusername/multimodal-threat-intel/actions/workflows/ci.yml/badge.svg)](https://github.com/yourusername/multimodal-threat-intel/actions/workflows/ci.yml)
+[![CI](https://github.com/Raoof128/MTIA/actions/workflows/ci.yml/badge.svg)](https://github.com/Raoof128/MTIA/actions/workflows/ci.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Python 3.9+](https://img.shields.io/badge/python-3.9+-blue.svg)](https://www.python.org/downloads/)
 [![Code Style: Black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
@@ -69,8 +69,8 @@ graph TD
 
 1.  **Clone the repository**:
     ```bash
-    git clone https://github.com/yourusername/multimodal-threat-intel.git
-    cd multimodal-threat-intel
+    git clone https://github.com/Raoof128/MTIA.git
+    cd MTIA
     ```
 
 2.  **Install dependencies**:

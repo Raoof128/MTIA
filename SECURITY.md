@@ -14,7 +14,7 @@ Use this section to tell people about which versions of your project are current
 We take security seriously. If you discover a security vulnerability within this project, please follow these steps:
 
 1.  **Do NOT open a public issue.** Publicly reporting a vulnerability can put users at risk.
-2.  **Email the maintainers**: Send an email to [security@example.com](mailto:security@example.com) (replace with actual contact if available) with a description of the vulnerability.
+2.  **Report via GitHub**: Please use the [GitHub Security Advisories](https://github.com/Raoof128/MTIA/security/advisories) feature to privately report vulnerabilities.
 3.  **Include details**: Please include as much information as possible, such as:
     *   Type of issue (e.g., buffer overflow, SQL injection, XSS)
     *   Full paths of source file(s) related to the manifestation of the issue

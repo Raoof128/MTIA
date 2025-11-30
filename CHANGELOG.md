@@ -20,3 +20,5 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Security
 - Implemented input validation using Pydantic.
 - Added safety warnings for educational use.
+
+[1.0.0]: https://github.com/Raoof128/MTIA/releases/tag/v1.0.0
